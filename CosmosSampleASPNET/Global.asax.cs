@@ -16,6 +16,7 @@ namespace CosmosSampleASPNET
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            DocumentDBRepository<CosmosSampleASPNET.Models.Item>.Initialize();
         }
     }
 }
